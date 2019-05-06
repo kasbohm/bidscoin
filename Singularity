@@ -8,6 +8,7 @@ FROM: python:3.7-slim
     . /code       
 
 %post
+    chmod -r +x /code
     cd /code
     apt-get update && apt-get install -y --no-install-recommends git
     pip install --upgrade pip setuptools && pip install -r /code/requirements.txt && pip install -e .

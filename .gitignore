@@ -1,6 +1,7 @@
 *.pyc
 .idea
 *.IMA
+*.sif
 dist
 build
 bidscoin.egg-info
