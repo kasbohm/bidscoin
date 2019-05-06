@@ -1,11 +1,11 @@
 Bootstrap: docker
-FROM python:3.7-slim
+FROM: python:3.7-slim
 
 %help 
-Run bidstrainer.py, bidsmapper.py, bidscoiner.py
+    Run bidstrainer.py, bidsmapper.py, bidscoiner.py
 
 %files
-. /code       
+    . /code       
 
 %post
     cd /code
